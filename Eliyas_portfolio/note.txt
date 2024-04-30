@@ -1,0 +1,37 @@
+To add an icon at the top of each anchor tag in your navigation, you can use an icon library or include custom icon images. Here's an example using Font Awesome, a popular icon library:
+
+1. Include Font Awesome in your HTML document by adding the following line within the `<head>` tag:
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+```
+
+2. Modify your navigation HTML to include the appropriate Font Awesome class and markup for the icons:
+
+```html
+<nav>
+  <ul>
+    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+    <li><a href="#"><i class="fas fa-address-book"></i> Contact</a></li>
+  </ul>
+</nav>
+```
+
+In this example, the `<i>` tag is used with the appropriate Font Awesome class to represent each icon. The `fas` class refers to the solid style of the icons. You can choose different icons from the Font Awesome library by replacing the class names (`fa-home`, `fa-info-circle`, etc.) with the desired icons.
+
+Make sure to adjust the Font Awesome version number in the `link` tag if necessary, based on the version you want to use.
+
+Note: If you prefer to use custom icon images instead of an icon library, you can replace the `<i>` tags with appropriate `<img>` tags that reference your custom icon images.
+
+how to make this icon above the anchor??
+use relative position
+
+example
+nav li i{
+    position: relative;
+    top:-20px;
+    left: 30px;
+    
+}
